@@ -38,7 +38,7 @@ octal system is a base-8 number system. It uses eight digits: 0,
 hexadecimal system is a base-16 number system. It uses 16 digits: 0-9
 
 */
-//  --------------------------------------------------------                 Practise            ------------------------------------------------
+//  -------------------------------------------   Practise        ------------------------------------------------
 
 
 // function decimaltoanybase (num, base){
@@ -58,14 +58,16 @@ hexadecimal system is a base-16 number system. It uses 16 digits: 0-9
 //     }
 
 //     return ans;
-    
-    
-
 
 // }
 
 // let rv =(decimaltoanybase(65,2));
 // console.log(rv);
+
+
+
+
+
 
 
 

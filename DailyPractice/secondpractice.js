@@ -98,59 +98,81 @@
 
 
 
-function anybasetodecimal(num, base){
-    let pow = 1;
-    let ans = 0;
-    while(num>0){
-        let ld = num%10;
-        num = Math.floor(num/10);
+// function anybasetodecimal(num, base){
+//     let pow = 1;
+//     let ans = 0;
+//     while(num>0){
+//         let ld = num%10;
+//         num = Math.floor(num/10);
 
-        ans = ans + (ld*pow);
-        pow = pow *base;
+//         ans = ans + (ld*pow);
+//         pow = pow *base;
 
 
     
-    }
-     return ans;
-}
+//     }
+//      return ans;
+// }
 
 // step 2
 
-function decimaltoanybase(num, base){
-    let ans =0;
-    let pow = 1;
+// function decimaltoanybase(num, base){
+//     let ans =0;
+//     let pow = 1;
 
-    while(num>0){
-        let rem = num%base;
-        num = Math.floor(num/base);
+//     while(num>0){
+//         let rem = num%base;
+//         num = Math.floor(num/base);
 
-        ans = ans + (rem*pow);
-        pow = pow * 10;
+//         ans = ans + (rem*pow);
+//         pow = pow * 10;
 
 
-    }
+//     }
 
-    return ans;
+//     return ans;
 
-}
+// }
 
 // step 3
 
-function anybasetoanybase(num, base1, base2){
+// function anybasetoanybase(num, base1, base2){
 
-    let decimalconvertednumber  = anybasetodecimal(num,base1);
+//     let decimalconvertednumber  = anybasetodecimal(num,base1);
 
-    let finalans = decimaltoanybase(decimalconvertednumber,base2);
-
-
-    return finalans;
+//     let finalans = decimaltoanybase(decimalconvertednumber,base2);
 
 
+//     return finalans;
 
 
 
-}
 
-let rv = anybasetoanybase(343,8,2)
-console.log(rv);
 
+// }
+
+// let rv = anybasetoanybase(343,8,2)
+// console.log(rv);
+
+
+
+// rough 
+
+
+// function octaltodecimal (num,base){
+//     let ans = 0;                              
+//     let pow = 1;
+
+//     while(num>0){
+//         let ld = num % base;
+//         num = Math.floor(num / base);
+
+//         ans = ans + (ld*pow);
+
+//         pow = pow*8;
+//     }
+//     return ans;
+// }
+
+// let otdrv = octaltodecimal(343,10);
+// console.log(otdrv);

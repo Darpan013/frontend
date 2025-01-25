@@ -123,39 +123,39 @@
 
 
 
-for(let row  = 1; row<=7; row++){
-    for(let column = 1; column<=7; column++ ){
-        if(row==1){
-            if(column==1 || column >=4){
-                process.stdout.write("*")
-            }else{process.stdout.write(" ")}
+// for(let row  = 1; row<=7; row++){
+//     for(let column = 1; column<=7; column++ ){
+//         if(row==1){
+//             if(column==1 || column >=4){
+//                 process.stdout.write("*")
+//             }else{process.stdout.write(" ")}
 
-        }else if (row >1 && row < 4){
-            if(column == 1 || column == 4){
-                process.stdout.write("*")
-            } else{process.stdout.write(" ")}
+//         }else if (row >1 && row < 4){
+//             if(column == 1 || column == 4){
+//                 process.stdout.write("*")
+//             } else{process.stdout.write(" ")}
             
 
-        } else if (row == 4){
-            process.stdout.write("*")
+//         } else if (row == 4){
+//             process.stdout.write("*")
 
 
-        }else if (row > 4 && row < 7){
-            if(column == 4 || column == 7){
-                process.stdout.write("*")
-            } else {process.stdout.write(" ")}
+//         }else if (row > 4 && row < 7){
+//             if(column == 4 || column == 7){
+//                 process.stdout.write("*")
+//             } else {process.stdout.write(" ")}
 
-        } else if (row == 7){
-            if(column <= 4 || column == 7){
-                process.stdout.write("*")
-            }else {process.stdout.write(" ")}
+//         } else if (row == 7){
+//             if(column <= 4 || column == 7){
+//                 process.stdout.write("*")
+//             }else {process.stdout.write(" ")}
 
-        }
-    }
+//         }
+//     }
 
-    console.log();
+//     console.log();
     
-}
+// }
 
 
 
